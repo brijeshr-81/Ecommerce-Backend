@@ -30,3 +30,29 @@ This repository contains a .NET-based microservice architecture for a simple eco
 7. OpenIddict issues JWTs to clients. Individual services validate tokens and enforce authorization scopes/roles.
 
 This README provides a recommended starting point and architecture overview for building the microservice-based ecommerce backend in .NET. Adjust stack choices (e.g., Kafka instead of RabbitMQ, or Azure AD B2C instead of OpenIddict) to match your team's operational preferences and scale requirements.
+
+# Ecommerce Microservices (.NET)
+
+This repository contains a simple ecommerce system built using .NET microservices.
+
+## Architecture
+- Products Service
+- Cart Service
+- Orders Service
+- Payments Service
+- API Gateway (YARP)
+- Auth Server (OAuth 2.0 / OpenID Connect)
+
+## Infrastructure
+- PostgreSQL
+- Redis
+- RabbitMQ
+- Docker & Docker Compose
+
+## Current Status
+- Phase 1: Local infrastructure setup complete
+
+## How to run infrastructure
+```bash
+cd infra
+docker compose -f docker-compose.infra.yml up -d
